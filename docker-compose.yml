@@ -1,0 +1,10 @@
+version: '3'
+services:
+  nginx:
+    build: ./html
+    image: yarinhill/6o6
+    ports:
+      - 3080:80
+    volumes:
+      - ./html/:/usr/share/nginx/html/
+    container_name: nginx

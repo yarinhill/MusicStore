@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">	
+<html>
+<title>
+	Checkout
+</title>
+<link rel="icon" href="../Pictures/batman-icon-png-8.jpg">
+<head>
+	<h2>Payment Info</h2>
+</head>
+	<link rel="stylesheet" href="../CSS/Form.css"></link>
+	<script type="text/javascript">
+	
+	function validate()
+	{
+		var firstName = document.getElementById("firstName");
+		var lastName = document.getElementById("lastName");
+		var state = document.getElementById("state");
+		var zip = document.getElementById("zip");
+		var email = document.getElementById("email");
+		var phoneNumber = document.getElementById("phonenumber");
+		var cardNumber = document.getElementById("cardnumber");
+		var cvv = document.getElementById("cvv");
+		var cardName = document.getElementById("nameoncard");
+		
+		if(firstName.value.trim()=="")
+		{
+			alert("Please fill First Name");
+			return false;
+		}
+		else if(firstName.value.trim().length<2)
+		{
+			alert("First Name must be longer than that");
+			return false;
+		}
+		else if(lastName.value.trim()=="")
+		{
+			alert("Please fill Last Name");
+			return false;
+		}		
+		else if(lastName.value.trim().length<2)
+		{
+			alert("Last Name must be longer than that");
+			return false;
+		}
+		else if(state.value.trim()=="")
+		{
+			alert("Please fill State");
+			return false;
+		}		
+		else if(state.value.trim().length<2)
+		{
+		alert("State must be longer than that");
+			return false;
+		}	
+		else if(zip.value.trim()=="")
+		{
+			alert("Please fill Zip Code");
+			return false;
+		}		
+		else if(zip.value.trim().length<4)
+		{
+		alert("Zip Code must be longer than that");
+			return false;
+		}	
+		else if(email.value.trim()=="")
+		{
+			alert("Please fill Email");
+			return false;
+		}		
+		else if(email.value.trim().length<8)
+		{
+			alert("Email must be longer than that");
+			return false;
+		}	
+		else if(cardName.value.trim()=="")
+		{
+			alert("Please fill Name on Card");
+			return false;
+		}		
+		else if(cardName.value.trim().length<4)
+		{
+			alert("Name on card must be longer than that");
+			return false;
+		}
+		else if(cardNumber.value.trim()=="")
+		{
+			alert("Please fill Card Number");
+			return false;
+		}		
+		else if(cardNumber.value.trim().length<17)
+		{
+			alert("Card Number must be longer than that");
+			return false;
+		}	
+		else if(cvv.value.trim()=="")
+		{
+			alert("Please fill CVV");
+			return false;
+		}		
+		else if(cvv.value.trim().length<3)
+		{
+			alert("CCV must be longer than that");
+			return false;
+		}	
+		else if(phoneNumber.value.trim()=="")
+		{
+			return true;
+		}		
+		else if(phoneNumber.value.trim().length<8)
+		{
+			alert("Phone Number must be longer than that");
+			return false;
+		}	
+
+	}
+	
+	</script>
+
+
+<body style="background-color:darkcyan">
+	
+		</br>	
+	<form onsubmit="return validate();"  action="../Website.html" id="form" method="post"  name="checkout">	
+	<div class="billing">
+			<h3>Billing Address</h3>
+		</br>		
+			<label for="firstName" class="form-label" >First Name</label> 
+			<input id="firstName" type="text" class="form-control" placeholder="John"  >
+			<div class="invalid-feedback">
+			</div>
+		</br>
+			<label for="lastName" class="form-label">Last Name</label> 
+			<input id="lastName" type="text" class="form-control" placeholder="Smith"  >
+			<div class="invalid-feedback">
+			</div>		
+		</br>	
+		<label for="country" class="form-label">Country</label>	
+		<select id=country required>
+			<option value="">Choose...</option>
+			<option value="Australia">Australia</option>
+			<option value="Brazil">Brazil</option>			
+			<option value="Canada">Canada</option>
+			<option value="China">China</option>
+			<option value="England">England</option>		
+			<option value="Germany">Germany</option>			
+			<option value="Israel">Israel</option>
+			<option value="India">India</option>
+			<option value="Italy">Italy</option>
+			<option value="Spain">Spain</option>
+			<option value="USA">USA</option>
+		</select>
+		</br>
+		</br>
+			<label for="state"   class="form-label">State</label> 
+			<input id="state" type="text" class="form-control" placeholder="New York"  >
+			<div class="invalid-feedback">
+			</div>					
+		</br>
+			<label for="zip"   class="form-label">Zip Code</label> 
+			<input id="zip" type="tel" maxlength="6" class="form-control" placeholder="123456" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+			<div class="invalid-feedback">
+			</div>	
+		</br>		
+			<label for="email" class="form-label">Email</label> 
+			<input id="email" type="email" class="form-control" placeholder="Johnsmith@gmail.com" >
+			<div class="invalid-feedback">
+			</div>					
+		</br>	
+		<label for="phonenumber" class="form-label">Phone Number</label> 
+		<input id="phonenumber" type="tel" class="form-control" placeholder="Optional" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+		<div class="invalid-feedback">
+		</div>			
+		</div>
+		</br>	
+	</div>	
+	
+	<div class="payment">
+		<h3>Payment</h3>			
+		</br>
+			<label for="nameoncard" class="form-label">Name On Card</label> 
+			<input id="nameoncard" type="text" class="form-control" placeholder="John Smith" >
+			<div class="invalid-feedback">
+		</br>		
+			<label for="cardnumber"   class="form-label">Card Number</label> 
+			<input id="cardnumber" type="tel" maxlength="24" class="form-control" placeholder="xxxx-xxxx-xxxx-xxxx" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+			<div class="invalid-feedback">
+			</div>	
+		</br>
+		
+			<label for="exp_month" class="form-label">Expiration Date</label>	
+			<select id=exp_month required>
+				<option value="">Month</option>
+				<option value="01">01</option>
+				<option value="02">02</option>			
+				<option value="03">03</option>
+				<option value="04">04</option>
+				<option value="05">05</option>		
+				<option value="06">06</option>			
+				<option value="07">07</option>
+				<option value="08">08</option>
+				<option value="09">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>				
+			</select>				
+			<label for="exp_year" class="form-label"></label>	
+			<select id=exp_year required>		
+				<option value="">Year</option>
+				<option value="2021">2021</option>
+				<option value="2022">2022</option>			
+				<option value="2023">2023</option>
+				<option value="2024">2024</option>
+				<option value="2025">2025</option>		
+				<option value="2026">2026</option>			
+				<option value="2027">2027</option>
+				<option value="2028">2028</option>
+				<option value="2029">2029</option>
+				<option value="2030">2030</option>
+			</select>	
+		</br>
+		</br>
+		<label for="cvv"   class="form-label">CVV</label> 
+		<input id="cvv" type="tel" size="3" maxlength="3" class="form-control" placeholder="123" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+		<div class="invalid-feedback">
+		</div>	
+		</br>
+		Payments
+		</br>
+		<label for="input1">1</label><input type="radio" name="test" id="input1" required value="1" />
+		<label for="input2">2</label><input type="radio" name="test" id="input2" value="2" />
+		<label for="input3">3</label><input type="radio" name="test" id="input3" value="3" />
+		<label for="input4">4</label><input type="radio" name="test" id="input4" value="4" />
+		<div class="invalid-feedback">
+		</div>
+	</div>						
+		</br>
+
+<button type="submit"><b>Submit</b></button>
+<div id = "success"></div>	
+</form>
+</body>		
+	
+</html> 
+					

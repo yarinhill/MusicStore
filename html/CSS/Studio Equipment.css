@@ -1,0 +1,331 @@
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+
+    font-family: apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(../Pictures/odair-faleco-VNKZvRIN85A-unsplash.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+img {
+
+    border-radius: 10%;
+}
+
+h2 {
+
+    display: inline-block;
+    font-size: 25px;
+    margin-right: 3%;
+    
+}
+
+h1 {
+
+    font-size: 45px;
+
+}
+
+h4 {
+
+    font-size: 22px;
+
+}
+
+li {
+    
+    width: 100%;
+    height: 40px;
+    border: 4px solid black;
+    border-radius: 100px;
+
+}
+
+ul li {
+        
+    list-style: none;
+    text-align: center;
+    background-color: black;
+    
+}
+
+.center-side {
+
+    padding-top: 1%;
+    padding-right:5%;
+    height:10px;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.contact-us {
+
+    font-size: 25px;
+    text-align: right;
+    padding-right: 30px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.contact-us a:hover {
+
+    color: grey!important;
+
+}
+
+.all-pages {
+     
+    padding-top: 3%;
+    height:10px;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.all-pages a:hover {
+
+    color: grey!important;
+
+}
+
+a {
+
+    text-decoration: none;
+    position: relative;    
+    z-index: 1;     
+    color: white;
+
+}
+
+.jazz-amp-overlay {
+
+    position: absolute;
+    top: 99px;
+    left: 5;
+    width: 13.7%;
+    height: 22%;
+    background: rgba(0, 0,0, 0.6);
+    color: white;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items:flex-start;
+    font-size: 14px; 
+    opacity: 0;
+    border-radius: 10%;
+
+
+}
+
+.jazz-amp-overlay:hover {
+
+    opacity: 1;
+    transition:0.5s;
+    
+}
+
+.jazz-amp-types {
+
+    padding-top: 5px;
+    padding-bottom: 38px;
+
+}
+
+.jazz-amp-title {
+
+    padding-inline-start: 10px;
+    padding-top: 30px;
+    
+}
+
+.jazz-amp-picture {
+
+    position:relative;
+    display: block;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-left: 200px;
+
+}
+
+.marshall-overlay {
+
+    position: absolute;
+    top: 0mm;
+    left: 5;
+    width: 15.75%;
+    height: 32.8%;
+    background: rgba(0, 0,0, 0.6);
+    color: white;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items:flex-start;
+    font-size: 14px; 
+    opacity: 0;
+    border-radius: 10%;
+
+}
+
+.marshall-overlay:hover {
+
+    opacity: 1;
+    transition:0.5s;
+    
+}
+
+.marshall-types {
+
+    padding-top: 5px;
+    padding-bottom: 38px;
+
+}
+
+.marshall-title {
+
+    padding-inline-start: 10px;
+    padding-top: 30px;
+    
+}
+
+.marshall-picture {
+
+    position:relative;
+    display: block;
+    background-repeat: no-repeat;
+    padding-left: 300px;
+    bottom: 203px;
+}
+
+.fender-acoustic-overlay {
+
+    position: absolute;
+    top: 0.2mm;
+    left: 5;
+    width: 20%;
+    height: 49%;
+    background: rgba(0, 0,0, 0.6);
+    color: white;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items:flex-start;
+    font-size: 14px; 
+    opacity: 0;
+    border-radius: 10%;
+
+}
+
+.fender-acoustic-overlay:hover {
+
+    opacity: 1;
+    transition:0.5s;
+    
+}
+
+.fender-acoustic-types {
+
+    padding-top: 5px;
+    padding-bottom: 38px;
+
+}
+
+.fender-acoustic-title {
+
+    padding-inline-start: 10px;
+    padding-top: 30px;
+    
+}
+
+.fender-acoustic-picture {
+
+    position:relative;
+    display: block;
+    background-repeat: no-repeat;
+    padding-left: 300px;
+    bottom: 206px;
+}
+
+.bass-amp-overlay {
+
+    position: absolute;
+    top: 0mm;
+    left: 5;
+    width: 24.5%;
+    height: 98.3%;
+    background: rgba(0, 0,0, 0.6);
+    color: white;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items:flex-start;
+    font-size: 14px; 
+    opacity: 0;
+    border-radius: 10%;
+
+}
+
+.bass-amp-overlay:hover {
+
+    opacity: 1;
+    transition:0.5s;
+    
+}
+
+.bass-amp-types {
+
+    padding-top: 5px;
+    padding-bottom: 38px;
+
+}
+
+.bass-amp-title {
+
+    padding-inline-start: 10px;
+    padding-top: 30px;
+    
+}
+
+.bass-amp-picture {
+
+    position:relative;
+    display: block;
+    background-repeat: no-repeat;
+    padding-left: 300px;
+    bottom: 206px;
+}
+
+button {
+
+    background-color: rgb(0, 140, 255);
+    bottom: 2px;
+    padding-top: 100px;
+    position: absolute;
+    margin-left: 100px;
+    justify-content: center;
+    border-radius: 500px;
+    border-color: black;
+
+}
+
+button:hover {
+
+    cursor: pointer;
+    color: white!important;
+
+}   
