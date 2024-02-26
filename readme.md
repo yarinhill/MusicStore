@@ -9,6 +9,12 @@ Start the Web Server with the Command:
 docker-compose up -d 
 ```
 
+To Run without docker-compose use:
+
+```
+docker run -d -it -p 3080:80 --name musicstore yarinhill/6o6
+```
+
 ### 2.
 To view the the Web Server
 Go to URL:
